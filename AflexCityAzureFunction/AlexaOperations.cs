@@ -79,7 +79,6 @@ namespace AflexCityFunctions
 			
             try
             {
-				int i = 1/0;
 				
                 serviceClient = ServiceClient.CreateFromConnectionString(connectionString);
 
