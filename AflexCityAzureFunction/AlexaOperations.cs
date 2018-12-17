@@ -76,8 +76,11 @@ namespace AflexCityFunctions
         {
             SkillResponse response = null;
             PlainTextOutputSpeech outputSpeech = new PlainTextOutputSpeech();
+			
             try
             {
+				int i = 1/0;
+				
                 serviceClient = ServiceClient.CreateFromConnectionString(connectionString);
 
                 string deviceStatus = (request.Request as IntentRequest)?.Intent.Slots.FirstOrDefault(s => s.Key == "status").Value?.Value;
